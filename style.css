@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Kumbh+Sans:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Overpass:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700&family=Red+Hat+Display:wght@400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500&display=swap");
+
+:root {
+  /* ### Primary */
+
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* ### Neutral */
+
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--dark-cyan);
+  width: 100%;
+  height: 98vh;
+
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 44vh;
+}
+
+.profile-card {
+  width: 380px;
+  height: 400px;
+
+  background: #fff;
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.top-img {
+  width: 100%;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  margin-top: -52px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.user-name {
+  padding-top: 1rem;
+  color: var(--very-dark-desaturated-blue);
+}
+
+.user-name span {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  font-weight: 400;
+  color: var(--dark-gray);
+}
+
+.location {
+  padding-block: 1rem;
+  color: var(--dark-gray);
+}
+
+hr {
+  outline: none;
+  border: none;
+  height: 1px;
+  background: rgb(240, 235, 235);
+}
+
+.profile-status {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.status span {
+  font-size: 12px;
+  font-weight: lighter;
+  color: var(--dark-gray);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
